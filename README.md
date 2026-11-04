@@ -2,7 +2,7 @@
 
 One-click bug reports for React apps — console, network, errors, repro steps and app state (TanStack Query) — with **no vendor cloud**. MIT licensed.
 
-> Status: pre-release (v0.1 in progress). See [`Bugcrumbs — Scope & PRD.md`](./Bugcrumbs%20—%20Scope%20&%20PRD.md).
+> Status: v0.1.0 (MVP) is out on npm. See the [release notes](https://github.com/kiridharan/bugcrumbs/releases/tag/v0.1.0) and the roadmap in [`Bugcrumbs — Scope & PRD.md`](./Bugcrumbs%20—%20Scope%20&%20PRD.md).
 
 ## Quick start
 
