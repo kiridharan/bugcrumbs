@@ -11,7 +11,7 @@ Thanks for helping. Bug reports, ideas and pull requests are all welcome.
 
 ## Setup
 
-Requires Node.js 22.12+ and pnpm 10 (`corepack enable` sets it up).
+Requires Node.js 22.18+ (24 recommended) and pnpm 10 (`corepack enable` sets it up).
 
 ```bash
 pnpm install
