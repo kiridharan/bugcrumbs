@@ -1,0 +1,38 @@
+{
+  "name": "@bugcrumbs/core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic capture and report model for Bugcrumbs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiridharan/bugcrumbs.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/kiridharan/bugcrumbs#readme",
+  "bugs": "https://github.com/kiridharan/bugcrumbs/issues",
+  "keywords": [
+    "bug-report",
+    "qa",
+    "devtools",
+    "console",
+    "network",
+    "redaction",
+    "privacy",
+    "testing"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}
