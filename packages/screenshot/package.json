@@ -1,0 +1,38 @@
+{
+  "name": "@bugcrumbs/screenshot",
+  "version": "0.0.0",
+  "description": "DOM screenshot for Bugcrumbs reports, loaded on demand",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiridharan/bugcrumbs.git",
+    "directory": "packages/screenshot"
+  },
+  "homepage": "https://github.com/kiridharan/bugcrumbs#readme",
+  "bugs": "https://github.com/kiridharan/bugcrumbs/issues",
+  "keywords": [
+    "screenshot",
+    "dom-screenshot",
+    "bug-report",
+    "qa"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@bugcrumbs/core": "workspace:*",
+    "modern-screenshot": "^4.7.0"
+  }
+}

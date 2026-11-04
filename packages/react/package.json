@@ -1,0 +1,51 @@
+{
+  "name": "@bugcrumbs/react",
+  "version": "0.0.0",
+  "description": "React devtools widget and error capture for Bugcrumbs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiridharan/bugcrumbs.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/kiridharan/bugcrumbs#readme",
+  "bugs": "https://github.com/kiridharan/bugcrumbs/issues",
+  "keywords": [
+    "react",
+    "bug-report",
+    "qa",
+    "devtools",
+    "error-boundary",
+    "feedback-widget",
+    "testing"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@bugcrumbs/core": "workspace:*",
+    "@bugcrumbs/screenshot": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}

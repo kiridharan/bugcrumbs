@@ -1,0 +1,39 @@
+{
+  "name": "bugcrumbs-monorepo",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiridharan/bugcrumbs.git"
+  },
+  "type": "module",
+  "packageManager": "pnpm@10.23.0",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' build",
+    "dev": "pnpm -F vite-react-example dev",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "pnpm build && playwright test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm typecheck",
+    "size": "pnpm build && size-limit",
+    "changeset": "changeset"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "@playwright/test": "^1.64.1",
+    "@size-limit/preset-small-lib": "^14.3.0",
+    "happy-dom": "^21.0.4",
+    "size-limit": "^14.3.0",
+    "tsdown": "^0.23.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

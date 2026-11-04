@@ -1,0 +1,44 @@
+{
+  "name": "@bugcrumbs/query",
+  "version": "0.0.0",
+  "description": "TanStack Query adapter for Bugcrumbs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiridharan/bugcrumbs.git",
+    "directory": "packages/query"
+  },
+  "homepage": "https://github.com/kiridharan/bugcrumbs#readme",
+  "bugs": "https://github.com/kiridharan/bugcrumbs/issues",
+  "keywords": [
+    "tanstack-query",
+    "react-query",
+    "bug-report",
+    "qa",
+    "devtools"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@bugcrumbs/core": "workspace:*"
+  },
+  "peerDependencies": {
+    "@tanstack/query-core": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tanstack/query-core": "^5.105.0"
+  }
+}

@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in Bugcrumbs doesn't work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! If you can, file it with Bugcrumbs itself and attach the HTML or JSON report.
+        **Check the report for anything private before attaching it.** Redaction is pattern-based and can miss things.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Install @bugcrumbs/react 0.1.0 in a Vite app
+        2. ...
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      placeholder: "@bugcrumbs/react 0.1.0, React 19.1, Vite 7, Chrome 142"
+    validations:
+      required: true
+  - type: textarea
+    id: coexistence
+    attributes:
+      label: Other tools in the app
+      description: Sentry, MSW, axios interceptors, OpenTelemetry or anything else that patches fetch, XHR or console.
+  - type: textarea
+    id: report
+    attributes:
+      label: Bugcrumbs report or logs
+      description: Attach the report file or paste relevant output.

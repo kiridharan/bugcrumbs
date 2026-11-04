@@ -1,0 +1,7 @@
+[
+  {
+    "name": "@bugcrumbs/core",
+    "path": "packages/core/dist/index.js",
+    "limit": "15 KB"
+  }
+]
