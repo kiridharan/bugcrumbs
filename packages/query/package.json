@@ -39,6 +39,6 @@
     "@tanstack/query-core": "^5.0.0"
   },
   "devDependencies": {
-    "@tanstack/query-core": "^5.105.0"
+    "@tanstack/query-core": "^5.105.1"
   }
 }
